@@ -31,6 +31,7 @@
 - Updated TOC to 3300
 - Removed RemoveFriend und Remove Guild
 - Removed Green and Red Color, now White
+- Doesn't load dropdown options infight
 - Small code optimizations
 
 # **Installation:**
