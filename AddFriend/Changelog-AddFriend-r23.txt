@@ -1,0 +1,109 @@
+------------------------------------------------------------------------
+r23 | NoM0Re | 2024-03-05 18:00:00 +0000 (Fri, 18 Sep 2009) | 4 lines
+Changed paths:
+   M /trunk/AddFriend.lua
+   M /trunk/AddFriend.toc
+
+AddFriend: Release 3.28
+
+Updated TOC to 3300
+Removed RemoveFriend und Remove Guild
+Removed Green and Red Color, now White
+Small code optimizations
+------------------------------------------------------------------------
+r22 | fyrye | 2009-09-18 22:15:08 +0000 (Fri, 18 Sep 2009) | 4 lines
+Changed paths:
+   M /trunk/.pkgmeta
+   M /trunk/AddFriend.lua
+   M /trunk/AddFriend.toc
+   M /trunk/embeds.xml
+
+AddFriend: Release 3.27
+Removed LibFriend and LibGuild dependencies
+Added local checks for isGuildee and isFriend
+Further optimized syntax and local scope
+------------------------------------------------------------------------
+r20 | fyrye | 2009-09-17 21:46:26 +0000 (Thu, 17 Sep 2009) | 6 lines
+Changed paths:
+   M /trunk/AddFriend.lua
+   M /trunk/AddFriend.toc
+
+AddFriend:
+Added self awareness to non-unit frames
+Condensed code to 66 lines from 100
+Removed comments
+Fixed scope on local functions
+Removed unneeded variables and functions
+------------------------------------------------------------------------
+r18 | fyrye | 2009-08-28 02:26:47 +0000 (Fri, 28 Aug 2009) | 8 lines
+Changed paths:
+   M /trunk/AddFriend.lua
+   M /trunk/AddFriend.toc
+
+AddFriend:
+Reverted back to ShowMenu hook
+*Fixes Set Focus issue
+*Breaks Ordering
+*Still does Player and Hostility Check
+*Still works with Pitbull4 Unit Frames
+Added Coloring for Add/Remove options
+Added Newbie tooltips
+------------------------------------------------------------------------
+r17 | fyrye | 2009-08-27 22:52:05 +0000 (Thu, 27 Aug 2009) | 3 lines
+Changed paths:
+   M /trunk/AddFriend.lua
+
+AddFriend:
+Added a hack to disable SET_FOCUS
+Added Fix for unit on button click
+------------------------------------------------------------------------
+r16 | fyrye | 2009-08-27 21:50:17 +0000 (Thu, 27 Aug 2009) | 5 lines
+Changed paths:
+   M /trunk
+   M /trunk/.pkgmeta
+   M /trunk/AddFriend.lua
+   M /trunk/AddFriend.toc
+   M /trunk/embeds.xml
+
+AddFriend:
+Added CallbackHandler-1.0
+Removed AceEvents-3.0
+Optimized OnDisable
+Updated pkgmeta, toc, embeds
+------------------------------------------------------------------------
+r14 | fyrye | 2009-08-27 19:10:29 +0000 (Thu, 27 Aug 2009) | 4 lines
+Changed paths:
+   M /trunk/AddFriend.lua
+
+Tagging as 3.21b
+AddFriend:
+Optimized button creation
+Fix: Non-player unit check (Who/Friends/Chat)
+------------------------------------------------------------------------
+r12 | fyrye | 2009-08-27 03:11:25 +0000 (Thu, 27 Aug 2009) | 2 lines
+Changed paths:
+   M /trunk/embeds.xml
+
+AddFriend:
+Fix embeds.xml
+------------------------------------------------------------------------
+r10 | fyrye | 2009-08-27 02:57:48 +0000 (Thu, 27 Aug 2009) | 12 lines
+Changed paths:
+   M /trunk/.pkgmeta
+   M /trunk/AddFriend.lua
+   M /trunk/AddFriend.toc
+   A /trunk/embeds.xml
+
+AddFriend:
+Tagging as 3.2b
+Completely changed hook methodology
+*Now Creates UnitPopUp Buttons
+*SecureHooks UnitPopup_HideButtons()
+*SecureHooks UnitPopUp_OnClick(self)
+Added hostility check ala bliz
+Added support for Pitbull4 Unit Frames
+Buttons now checks for current player
+Buttons are now sorted by Index
+Optimized dependencies
+Added embeds.xml
+------------------------------------------------------------------------

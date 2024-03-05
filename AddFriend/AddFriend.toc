@@ -1,0 +1,15 @@
+## Interface: 30300
+## Title: AddFriend
+## Author: fyrye, NoM0Re
+## Version: 3.28
+## Notes: Enhances the player unit dropdown menu, seamlessly integrating options to add Friends and Guild members.
+## OptionalDeps: LibStub, CallbackHandler-1.0, Ace3
+## DefaultState: Enabled
+## LoadOnDemand: 0
+## X-Website: https://github.com/NoM0Re/AddFriend
+
+#@no-lib-strip@
+embeds.xml
+#@end-no-lib-strip@
+
+AddFriend.lua
