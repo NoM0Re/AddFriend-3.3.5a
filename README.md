@@ -16,7 +16,7 @@
 </a>
 <br/>
 
-**AddFriend** developed by Byfyrye, is a simple addon that adds an Add Friend or Add Guild option to the context menu of player options.<br/>
+[**AddFriend**](https://www.curseforge.com/wow/addons/addfriend) [![CurseForge](https://cf.way2muchnoise.eu/short_18911.svg)](https://www.curseforge.com/wow/addons/addfriend) developed by Byfyrye, is a simple addon that adds an Add Friend or Add Guild option to the context menu of player options.<br/>
 <br/>
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/dKKdy85/Wo-WScrn-Shot-030524-181042.jpg" alt="Wo-WScrn-Shot-030524-181042" border="0"></a><br/>
 **Features**<br/>
@@ -33,4 +33,7 @@
 - Removed Green and Red Color, now White
 - Small code optimizations
 
-
+# **Installation:**
+1. [Download here](https://github.com/NoM0Re/AddFriend-3.3.5a/archive/refs/heads/main.zip)<br/><br/>
+2. Unzip and take folder **AddFriend**<br/><br/>
+3. Put it in ur /Interface/Addons folder<br/><br/><br/>
