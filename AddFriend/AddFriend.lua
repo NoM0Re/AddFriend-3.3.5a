@@ -10,7 +10,7 @@ local gsub, ipairs = gsub, ipairs;
 local GuildRoster, ShowFriends, GetNumFriends, GetFriendInfo = GuildRoster, ShowFriends, GetNumFriends, GetFriendInfo;
 local IsInGuild, CanGuildInvite, GetGuildRosterInfo, GetNumGuildMembers  = IsInGuild, CanGuildInvite, GetGuildRosterInfo, GetNumGuildMembers;
 local AddFriend, GuildInvite  = AddFriend, GuildInvite;
-local UnitGUID, UnitName, UnitCanCooperate = UnitGUID, UnitName, UnitCanCooperate;
+local UnitGUID, UnitName, UnitCanCooperate, InCombatLockdown = UnitGUID, UnitName, UnitCanCooperate, InCombatLockdown;
 local UIDropDownMenu_CreateInfo, UIDropDownMenu_AddButton = UIDropDownMenu_CreateInfo, UIDropDownMenu_AddButton;
 local frameTypes = {["FRIEND"]=1,["PLAYER"]=1,["PARTY"]=1,["RAID_PLAYER"]=1,["RAID"]=1,["PET"]=false,["SELF"]=false};
 
@@ -49,7 +49,7 @@ end
 function AFriend:UnitPopup_ShowMenu(dropdownMenu, which, unit, name, userData)
 	local thisName = name or UnitName(unit);
 	which = gsub(which, "PB4_", "");
-	if not frameTypes[which] then return; end
+	if InCombatLockdown() or not frameTypes[which] then return; end
 	if (which ~= "FRIEND") and (not UnitCanCooperate("player", unit) or UnitGUID(unit) == UnitGUID("player")) then return; end
 	if which == "FRIEND" and thisName == UnitName("player") then return; end
 	if (UIDROPDOWNMENU_MENU_LEVEL > 1) then return; end
